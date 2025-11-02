@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我 | 个人介绍</title>
+    <style>
+        /* --- 基础样式 --- */
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* --- 头部样式 --- */
+        header {
+            text-align: center;
+            padding: 60px 0;
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%; /* 圆形头像 */
+            object-fit: cover; /* 保持图片比例 */
+            border: 5px solid white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            margin: 20px 0 10px;
+            font-size: 2.5rem;
+        }
+
+        .title {
+            font-size: 1.2rem;
+            color: #bdc3c7;
+            font-weight: 300;
+        }
+
+        /* --- 主要内容区域 --- */
+        section {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 40px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--light-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+        }
+
+        /* --- 关于我部分 --- */
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        /* --- 技能部分 --- */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-item {
+            background-color: var(--light-color);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .skill-item i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        /* --- 联系方式 --- */
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            font-size: 2rem;
+        }
+
+        .contact-links a {
+            color: var(--secondary-color);
+            transition: color 0.3s ease;
+        }
+
+        .contact-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* --- 页脚 --- */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+        /* --- 响应式设计 --- */
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile-pic {
+                width: 150px;
+                height: 150px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    </风格>
+    <!-- 引入 Font Awesome 图标库 -->
+    <link rel="样式表" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<身体>
+
+    <!-- 页面头部 -->
+    <页眉>
+        <div 班级="容器">
+            <!-- 请确保你的头像文件和这个 HTML 文件在同一个文件夹下 -->
+            <IMG src="screenshot_20251102_101335.jpg" alt="我的头像" 班级="profile-pic">
+            <h1>秒杀喵</h1>
+            <p 班级="标题">MC爱好者</p>
+        </div>
+    </页眉>
+
+    <div 班级="容器">
+        <!-- “关于我”部分 -->
+        <section id="关于">
+            <h2><<我 班级="fas fa-user-circle"></</我> 关于我</h2>
+            <div 班级="about-content">
+                <div 班级="关于文本">
+                    <p>你好！我叫秒杀喵</p>
+                    <p>mc指令师，拥有自己的服务器。</p>
+                    <p>mc爱好者，可以在抖音联系我。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- “技能”部分 -->
+        <section id="skills">
+            <h2><<我 班级="fas fa-cogs"></</我> 我的技能</h2>
+            <div 班级="skills-grid">
+                <div 班级="skill-item">
+                    <<我 班级="fas fa-code"></</我>
+                    <H3>前端开发</H3>
+                    <p>HTML, CSS, JavaScript, React</p>
+                </div>
+                <div 班级="skill-item">
+                    <<我 班级="fas fa-database"></</我>
+                    <H3>后端开发</H3>
+                    <p>Node.js, Python, SQL</p>
+                </div>
+                <div 班级="skill-item">
+                    <<我 班级="fas fa-paint-brush"></</我>
+                    <H3>UI/UX 设计</H3>
+                    <p>Figma, Adobe XD, 原型设计</p>
+                </div>
+                <div 班级="skill-item">
+                    <<我 班级="fas fa项目图表"></</我>
+                    <部分>项目管理</H3>
+                    <填充>敏捷开发, PX, 团队协作</p>
+                </div>
+            </div>
+        </</>
+
+        <! < 链接 rel=
+        <</ 头=>>
+            <<><<身体 >="fas fa-信封"></</我> 抖音搜秒杀喵联系我</h2>
+            <p 风格="text-align: center;">如果你对我的作品感兴趣，或者想一起合作，欢迎随时联系我！</p>
+            <<! -- 页面头部 --> 班级="联系人链接">
+                << 页眉=> title="发邮件给我"><<我 班级="fas fa-envelope-square"></</我></一个>
+                << div=班级="容器"=> title="访问我的GitHub"><<i class="fab fa-github-square"></</i></a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" title="访问我的LinkedIn"><<i class="fab fa-linkedin"></</i></a>
+                <a href="https://weixin.qq.com" target="_blank" title="我的qq:3644113420"><<i class="fab fa-weixin"></</i></a>
+            </div>
+        </section>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; {currentYear} 秒杀喵. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // 自动更新版权年份
+        document.addEventListener('DOMContentLoaded', function() {
+            const footerElement = document.querySelector('footer p');
+            const currentYear = new Date().getFullYear();
+            footerElement.innerText = `© ${currentYear} 秒杀喵. All rights reserved.`;
+        });
+    </script>
+
+</body>
+超文本标记语言html>
